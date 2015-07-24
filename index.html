@@ -2,66 +2,55 @@
 <head>
   <meta charset="utf-8">
 
-  <title>My Parse App</title>
-  <meta name="description" content="My Parse App">
+  <title>Hoya Hacks</title>
+  <meta name="description" content="Welcome to Hoya Hacks! Sign up or read more about our upcoming hackathon at Georgetown University.">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+  <script type="text/javascript" src="js/create-user.js"></script>
 </head>
 
 <body>
   
   <div id="main">
-    <h1>You're ready to use Parse!</h1>
+    <h1>Register</h1>
 
-    <p>Read the documentation and start building your JavaScript app:</p>
-
-    <ul>
-      <li><a href="https://www.parse.com/docs/js_guide">Parse JavaScript Guide</a></li>
-      <li><a href="https://www.parse.com/docs/js">Parse JavaScript API Documentation</a></li>
-    </ul>
-
-    <div style="display:none" class="error">
-      Looks like there was a problem saving the test object. Make sure you've set your application ID and javascript key correctly in the call to <code>Parse.initialize</code> in this file.
+<!--     <div style="display:none" class="error">
     </div>
 
     <div style="display:none" class="success">
-      <p>We've also just created your first object using the following code:</p>
-      
-        <code>
-          var TestObject = Parse.Object.extend("TestObject");<br/>
-          var testObject = new TestObject();<br/>
-          testObject.save({foo: "bar"});
-        </code>
     </div>
+ -->
+    <section>
+      <form class="signup" id="signup">
+        <input id="signup-username" name="signup-username" type="text" placeholder="Your .edu email" required/>
+        <input id="password-1" name="password-1" type="password" placeholder="Password" required/>
+        <input id="password-2" name="password-2" type="password" placeholder="Confirm Password" required/>
+        <input type="submit" id="create-new-user" class="btn" value="Sign Up">
+      </form>
+    </section>
+
+    <section>
+      <form class="login" id="login">
+        <input id="login-username" name="login-username" type="text" placeholder="Your email" required/>
+        <input id="password" name="password" type="password" placeholder="Password" required/>
+        <input type="submit" id="create-new-user" class="btn" value="Sign Up">
+      </form>
+    </section>
+
   </div>
-
-  <script type="text/javascript">
-    Parse.initialize("X1NGGfUhjOod4VtVMKE9WHqtD15b894Z2cizubz0", "Q6CwqIpilFIepvfRgSZ5zJAhTs0m4KOiY3Z5MkZQ");
-
-    var TestObject = Parse.Object.extend("TestObject");
-    var testObject = new TestObject();
-      testObject.save({foo: "bar"}, {
-      success: function(object) {
-        $(".success").show();
-      },
-      error: function(model, error) {
-        $(".error").show();
-      }
-    });
-  </script>
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-65596909-1', 'auto');
     ga('send', 'pageview');
-
   </script>
 </body>
 
