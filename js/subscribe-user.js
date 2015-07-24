@@ -12,12 +12,26 @@ function subscribeUser(e) {
   var subscription = new Subscription();
   subscription.save({email: userEmail}, {
     success: function(object) {
-      $(".success").show();
-      console.log(userEmail);
+      success("Subscribed!");
     },
     error: function(model, error) {
-      $(".error").show();
-      console.log(userEmail);
+      error("Something went wrong. Please try again!");
     }
   });
+}
+
+function flash(m) {
+  // finding our messagebox
+  var $msgBox =  $( 'html #messages' );
+
+  // set text & fade it in
+  $msgBox.append(m);
+}
+
+function success(m) {
+  flash('<div class="success">' + m + '</div>');
+}
+
+function error(m) {
+  flash('<div class="error">' + m + '</div>');
 }
