@@ -7,8 +7,10 @@
   <meta name="viewport" content="width=device-width">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/login.js"></script>
   <script type="text/javascript" src="js/create-user.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -33,10 +35,12 @@
     <span class="purple">n</span>
   </div>
 
-  <form class="email-subscribe" id="email-subscribe">
-    <input id="subscriber-email" name="subscriber-email" type="text" placeholder="Your .edu email" required/>
-    <input type="submit" id="subscribe-me" class="btn" value="Subscribe">
-  </form>
+  <div class="main">
+    <form class="email-subscribe" id="email-subscribe">
+      <input id="subscribe-email" name="subscribe-email" type="text" placeholder="Your .edu email" required/>
+      <input type="submit" id="email-subscribe" class="btn" value="Subscribe">
+    </form>
+  </div>
 
   <!-- <a href="#">Become a sponsor</a> -->
 

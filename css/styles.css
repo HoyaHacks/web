@@ -1,40 +1,60 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
 body {
-    background: #eee;
-    text-align: center;
+    font-family: 'Open Sans', sans-serif;
     padding: 0 25px;
+    text-align: center;
+    color: #202f57;
 }
 
-#main {
-    width: 500px;
-    margin: auto;
-    text-align: left;
-    background: white;
-    padding: 50px 60px;
-    border: solid #ddd;
-    border-width: 0 1px 1px 1px;
+.navy { color: #202f57; }
+.dark-teal { color: #057d93; }
+.teal { color: #47adaa; }
+.purple { color: #3f2255; }
+.magenta { color: #a73368; }
+.orange { color: #f05e3c; }
+.red { color: #ed3848; }
+.pink { color: #d63756; }
+.light-orange { color: #ed6f40; }
+
+img {
+    max-height: 100%;
 }
 
-#main h1 {
-    margin-top: 0;
-    font-size: 35px;
+.logo-holder {
+    margin-top: -1em;
 }
 
-#main ul {
-    padding-left: 20px;
+.btn {
+    -webkit-appearance: none;
+    text-transform: uppercase;
+    background: #47adaa;
+    color: #fff;
 }
 
-#main .error {
-    border: 1px solid red;
-    background: #FDEFF0;
-    padding: 20px;
+input {
+    padding: 0.375em 0.6em;
+    height: auto;
+    border: 0;
 }
 
-#main .success {
-    margin-top: 25px;
+input:focus {
+    outline: none;
 }
 
-#main .success code {
-    font-size: 12px;
-    color: green;
-    line-height: 13px;
+.coming-soon {
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-size: 4em;
+}
+
+form input {
+    font-size: 3em;
+    display: block;
+    text-align: center;
+    margin: 0 auto 0.5em;
+}
+
+#subscriber-email {
+    color: #202f57;
 }
