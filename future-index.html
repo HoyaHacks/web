@@ -21,26 +21,34 @@
     <img src="img/logo.png">
   </div>
   
-  <div class="coming-soon">
-    <span class="navy">C</span>
-    <span class="dark-teal">o</span>
-    <span class="red">m</span>
-    <span class="teal">i</span>
-    <span class="magenta">n</span>
-    <span class="orange">g</span>
-    &nbsp;
-    <span class="pink">S</span>
-    <span class="light-orange">o</span>
-    <span class="teal">o</span>
-    <span class="purple">n</span>
+  <div id="main">
+    <h1>Register</h1>
+
+<!--     <div style="display:none" class="error">
+    </div>
+
+    <div style="display:none" class="success">
+    </div>
+ -->
+    <section>
+      <form class="signup" id="signup">
+        <input id="signup-username" name="signup-username" type="text" placeholder="Your .edu email" required/>
+        <input id="password-1" name="password-1" type="password" placeholder="Password" required/>
+        <input id="password-2" name="password-2" type="password" placeholder="Confirm Password" required/>
+        <input type="submit" id="create-new-user" class="btn" value="Sign Up">
+      </form>
+    </section>
+
+    <section>
+      <form class="login" id="login">
+        <input id="login-username" name="login-username" type="text" placeholder="Your email" required/>
+        <input id="password" name="password" type="password" placeholder="Password" required/>
+        <input type="submit" id="create-new-user" class="btn" value="Sign Up">
+      </form>
+    </section>
+
   </div>
 
-  <div class="main">
-    <form class="email-subscribe" id="email-subscribe">
-      <input id="subscribe-email" name="subscribe-email" type="text" placeholder="Your .edu email" required/>
-      <input type="submit" id="email-subscribe" class="btn" value="Subscribe">
-    </form>
-  </div>
 
   <!-- <a href="#">Become a sponsor</a> -->
 
