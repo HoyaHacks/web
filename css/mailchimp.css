@@ -10,7 +10,7 @@
 #mc_embed_signup .mc-field-group .email {
 	display: inline-block;
     border: 0;
-	font-size: 3em;
+	font-size: 3.5em;
     color: #202f57;
     text-align: center;
 }
@@ -20,10 +20,18 @@
     font-size: 2.3em;
     height: auto;
     padding: 0.7em 1.2em;
+    margin: 0.5em 0 0;
 }
 
 #mc_embed_signup .mc-field-group {
     display: block;
-	padding-bottom: 1.5em;
+    padding-bottom: 0;
     text-align: center;
+}
+
+#mc_embed_signup div.response {
+	width: 100%;
+	float: none;
+	text-align: center;
+	margin-top: 0;
 }
