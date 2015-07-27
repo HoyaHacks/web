@@ -9,46 +9,74 @@
   <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
   <script type="text/javascript" src="js/subscribe-user.js"></script>
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mailchimp.css">
 </head>
 
 <body>
-  
-  <div class="logo-holder">
-    <img src="img/logo.png">
+  <div class="container-fluid">
+    <div class="logo-holder">
+      <img src="img/logo.png">
+    </div>
+    
+    <div class="coming-soon">
+      <span class="navy">C</span>
+      <span class="dark-teal">o</span>
+      <span class="red">m</span>
+      <span class="teal">i</span>
+      <span class="magenta">n</span>
+      <span class="orange">g</span>
+      &nbsp;
+      <span class="pink">S</span>
+      <span class="light-orange">o</span>
+      <span class="teal">o</span>
+      <span class="purple">n</span>
+    </div>
+
+<!--     <div id="messages"></div>
+
+    <form class="email-subscribe" id="email-subscribe">
+      <input id="subscriber-email" name="subscriber-email" type="text" placeholder="Your .edu email" required/>
+      <input type="submit" id="subscribe-me" class="btn" value="Subscribe">
+    </form> -->
+
+    <!-- <a href="#">Become a sponsor</a> -->
+
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup">
+      <form action="http://hoyahacks.us11.list-manage.com/subscribe/post?u=f55885e2bcd3f02b15c63562a&amp;id=f639714c6d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+          <div class="mc-field-group">
+            <!-- <label for="mce-EMAIL">Email Address </label> -->
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your .edu email">
+          </div>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div> 
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;"><input type="text" name="b_f55885e2bcd3f02b15c63562a_f639714c6d" tabindex="-1" value=""></div>
+          <div class="clear text-center"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn"></div>
+        </div>
+      </form>
+    </div>
   </div>
-  
-  <div class="coming-soon">
-    <span class="navy">C</span>
-    <span class="dark-teal">o</span>
-    <span class="red">m</span>
-    <span class="teal">i</span>
-    <span class="magenta">n</span>
-    <span class="orange">g</span>
-    &nbsp;
-    <span class="pink">S</span>
-    <span class="light-orange">o</span>
-    <span class="teal">o</span>
-    <span class="purple">n</span>
-  </div>
 
-  <div id="messages"></div>
+  <script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+  <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+  <!--End mc_embed_signup-->
 
-  <form class="email-subscribe" id="email-subscribe">
-    <input id="subscriber-email" name="subscriber-email" type="text" placeholder="Your .edu email" required/>
-    <input type="submit" id="subscribe-me" class="btn" value="Subscribe">
-  </form>
-
-  <!-- <a href="#">Become a sponsor</a> -->
-
+  <!-- Google Analytics -->
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-65596909-1', 'auto');
-    ga('send', 'pageview');
+  ga('create', 'UA-65596909-1', 'auto');
+  ga('send', 'pageview');
   </script>
 </body>
 

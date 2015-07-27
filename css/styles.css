@@ -44,20 +44,9 @@ input:focus {
 }
 
 .coming-soon {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.8em;
     text-transform: uppercase;
     font-size: 4em;
-}
-
-form input {
-    font-size: 3em;
-    display: block;
-    text-align: center;
-    margin: 0 auto 0.5em;
-}
-
-#subscriber-email {
-    color: #202f57;
 }
 
 #messages {

@@ -1,0 +1,29 @@
+#mc_embed_signup {
+	background: #fff;
+	clear: left;
+}
+
+#mc_embed_signup form {
+	padding: 10px 0;
+}
+
+#mc_embed_signup .mc-field-group .email {
+	display: inline-block;
+    border: 0;
+	font-size: 3em;
+    color: #202f57;
+    text-align: center;
+}
+
+#mc_embed_signup .button {
+    background: #47adaa;
+    font-size: 2.3em;
+    height: auto;
+    padding: 0.7em 1.2em;
+}
+
+#mc_embed_signup .mc-field-group {
+    display: block;
+	padding-bottom: 1.5em;
+    text-align: center;
+}
