@@ -2,7 +2,6 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    padding: 0 25px;
     text-align: center;
     color: #202f57;
 }
@@ -24,6 +23,10 @@ img {
 
 .logo-holder {
     margin-top: 1em;
+}
+
+.logo-holder img {
+    max-width: 100%;
 }
 
 .btn {
@@ -52,4 +55,16 @@ input:focus {
 #messages {
     min-height: 1.4em;
     font-size: 2em;
+}
+
+@media only screen and (max-width : 767px){
+    .coming-soon {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width : 520px){
+    .coming-soon {
+        font-size: 2em;
+    }
 }

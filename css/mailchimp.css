@@ -35,3 +35,15 @@
 	text-align: center;
 	margin-top: 0;
 }
+
+@media only screen and (max-width : 767px){
+    #mc_embed_signup {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width : 520px){
+    #mc_embed_signup {
+        font-size: 0.8em;
+    }
+}
