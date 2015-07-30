@@ -13,6 +13,14 @@
 	font-size: 3.5em;
     color: #202f57;
     text-align: center;
+    border-bottom: 1px solid gray;
+    width: 600px;
+    max-width: 90%;
+}
+
+#mc_embed_signup input.mce_inline_error {
+    width: 600px;
+    max-width: 90%;
 }
 
 #mc_embed_signup .button {
@@ -35,6 +43,8 @@
 	text-align: center;
 	margin-top: 0;
 }
+
+
 
 @media only screen and (max-width : 767px){
     #mc_embed_signup {
