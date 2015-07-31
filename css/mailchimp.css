@@ -1,16 +1,16 @@
 #mc_embed_signup {
-	background: #fff;
-	clear: left;
+    background: #fff;
+    clear: left;
 }
 
 #mc_embed_signup form {
-	padding: 10px 0;
+    padding: 10px 0;
 }
 
 #mc_embed_signup .mc-field-group .email {
-	display: inline-block;
+    display: inline-block;
     border: 0;
-	font-size: 3.5em;
+    font-size: 3.5em;
     color: #202f57;
     text-align: center;
     border-bottom: 1px solid gray;
@@ -18,9 +18,10 @@
     max-width: 90%;
 }
 
-#mc_embed_signup input.mce_inline_error {
+#mc_embed_signup .mce_inline_error {
     width: 600px;
     max-width: 90%;
+    margin: 0 auto !important;
 }
 
 #mc_embed_signup .button {
@@ -35,13 +36,14 @@
     display: block;
     padding-bottom: 0;
     text-align: center;
+    width: auto;
 }
 
 #mc_embed_signup div.response {
-	width: 100%;
-	float: none;
-	text-align: center;
-	margin-top: 0;
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin-top: 0;
 }
 
 
