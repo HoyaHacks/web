@@ -50,14 +50,29 @@
 
 
 
-@media only screen and (max-width : 767px){
+@media only screen and (max-width : 979px){
     #mc_embed_signup {
         font-size: 0.9em;
+    }
+    #mc_embed_signup .mc-field-group .email {
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width : 767px){
+    #mc_embed_signup {
+        font-size: 0.7em;
+    }
+    #mc_embed_signup .mc-field-group .email {
+        width: 450px;
     }
 }
 
 @media only screen and (max-width : 520px){
     #mc_embed_signup {
-        font-size: 0.8em;
+        font-size: 0.6em;
+    }
+    #mc_embed_signup .mc-field-group .email {
+        width: 350px;
     }
 }

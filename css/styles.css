@@ -21,7 +21,6 @@ body {
 
 .bold { font-weight: 700; }
 
-
 img {
     max-height: 100%;
 }
@@ -62,7 +61,7 @@ img {
 }
 
 .logo-holder img {
-    max-width: 100%;
+    max-width: 96%;
     width: 1000px;
 }
 
@@ -103,9 +102,9 @@ input:focus {
 
 .questions {
     display: inline-block;
-    text-align: left;
     font-size: 1.5em;
     opacity: 0.8;
+    margin-top: 1em;
 }
 
 .bulldog-tease {
