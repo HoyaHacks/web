@@ -18,10 +18,42 @@ body {
 .pink { color: #d63756; }
 .light-orange { color: #ed6f40; }
 .success { color: #0fd016; }
+
 .bold { font-weight: 700; }
+
 
 img {
     max-height: 100%;
+}
+
+.has-gradient:before {
+    content: '';
+    background-image: repeating-linear-gradient(
+        45deg,
+        #202f57 0,
+        #202f57 11%,
+        #057d93 11%,
+        #057d93 22%,
+        #47adaa 22%,
+        #47adaa 33%,
+        #3f2255 33%,
+        #3f2255 44%,
+        #a73368 44%,
+        #a73368 55%,
+        #f05e3c 55%,
+        #f05e3c 66%,
+        #ed3848 66%,
+        #ed3848 77%,
+        #d63756 77%,
+        #d63756 88%,
+        #ed6f40 88%,
+        #ed6f40 100% /* determines size */    );
+    display: block;
+    width: 100%;
+    height: 1em;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .logo-holder {
@@ -66,7 +98,7 @@ input:focus {
 .contact-us {
     margin-top: 100px;
     background: rgb(42, 42, 42);
-    padding: 3em;
+    padding: 5em 2em 4em;
 }
 
 .questions {
