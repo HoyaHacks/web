@@ -1,5 +1,4 @@
 #mc_embed_signup {
-    background: #fff;
     clear: left;
 }
 
@@ -30,6 +29,9 @@
     height: auto;
     padding: 0.7em 1.2em;
     margin: 0.5em 0 0;
+}
+#mc_embed_signup .button:hover {
+    background: #ed6f40;
 }
 
 #mc_embed_signup .mc-field-group {

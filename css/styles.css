@@ -3,7 +3,9 @@
 body {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    color: #202f57;
+    color: #fff;
+    background: rgb(42,42,42);
+    background: url(../img/bg-blue.jpg);
 }
 
 .navy { color: #202f57; }
@@ -16,17 +18,20 @@ body {
 .pink { color: #d63756; }
 .light-orange { color: #ed6f40; }
 .success { color: #0fd016; }
+.bold { font-weight: 700; }
 
 img {
     max-height: 100%;
 }
 
 .logo-holder {
-    margin-top: 1em;
+    margin-top: 6em;
+    opacity: 0.5;
 }
 
 .logo-holder img {
     max-width: 100%;
+    width: 1000px;
 }
 
 .btn {
@@ -50,11 +55,40 @@ input:focus {
     margin-bottom: 0.8em;
     text-transform: uppercase;
     font-size: 4em;
+    opacity: 0.2;
 }
 
 #messages {
     min-height: 1.4em;
     font-size: 2em;
+}
+
+.contact-us {
+    margin-top: 100px;
+    background: rgb(42, 42, 42);
+    padding: 3em;
+}
+
+.questions {
+    display: inline-block;
+    text-align: left;
+    font-size: 1.5em;
+    opacity: 0.8;
+}
+
+.bulldog-tease {
+    display: inline-block;
+    padding-right: 1em;
+    opacity:  .8;
+}
+
+.contact-email {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.contact-email:hover {
+    color: #fff;
 }
 
 @media only screen and (max-width : 767px){
