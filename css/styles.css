@@ -82,11 +82,11 @@ input:focus {
     outline: none;
 }
 
-.coming-soon {
-    margin-bottom: 0.8em;
-    text-transform: uppercase;
+.dates {
     font-size: 4em;
-    opacity: 0.2;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
 }
 
 #messages {
@@ -110,7 +110,7 @@ input:focus {
 .bulldog-tease {
     display: inline-block;
     padding-right: 1em;
-    opacity:  .8;
+    opacity: .8;
 }
 
 .contact-email {
@@ -123,13 +123,13 @@ input:focus {
 }
 
 @media only screen and (max-width : 767px){
-    .coming-soon {
+    .dates {
         font-size: 3em;
     }
 }
 
 @media only screen and (max-width : 520px){
-    .coming-soon {
+    .dates {
         font-size: 2em;
     }
 }
