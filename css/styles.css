@@ -82,10 +82,13 @@ input:focus {
     outline: none;
 }
 
+.dates, .coming-soon {
+    font-size: 4em;
+}
+
 .coming-soon {
     margin-bottom: 0.8em;
     text-transform: uppercase;
-    font-size: 4em;
     opacity: 0.2;
 }
 
