@@ -6,68 +6,269 @@
   <meta name="description" content="Welcome to Hoya Hacks! Sign up or read more about our upcoming hackathon at Georgetown University.">
   <meta name="viewport" content="width=device-width">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
-  <script type="text/javascript" src="js/subscribe-user.js"></script>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css">
+  <script type="text/javascript" src="js/main.js"></script>
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/mailchimp.css">
+  <link rel="stylesheet" href="css/bootstrap-custom.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="container-fluid">
-    <div class="row">
-      <div class="logo-holder col-md-12">
-        <img src="img/logo-w.png" class="logo">
-        <div class="dates">
+    <!-- ASSETS -->
+    <!-- <img src="img/logo-w.png" class="logo"> -->
+    <!-- <img src="img/bulldog.png"> -->
+
+    <section class="pane row splash" id="splash">
+      <div class="content">
+        <div class="title-row location">
+          Georgetown University
+        </div>
+        <div class="title-row">
+          <img src="img/logo.png" class="logo">
+        </div>
+        <div class="title-row date">
           January 29-31, 2016
         </div>
+        <div class="title-row">
+          <ul class="action-buttons">
+            <li><a href="#apply" class="btn">Apply</a></li>
+            <li><a href="#sponsor" class="btn">Sponsor</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <nav class="breadcrumbs row" id="breadcrumbs">
+      <ul class="nav">
+        <li id="about"><a href="#">About</a></li>
+        <li id="schedule"><a href="#">Schedule</a></li>
+        <li id="faq"><a href="#">FAQ</a></li>
+        <li id="sponsors"><a href="#">Sponsors</a></li>
+        <li id="partners"><a href="#">Partners</a></li>
+      </ul>
+    </nav>
+
+    <section class="pane row about">
+      <div class="content">
+        <h2>What is Hoya Hacks?</h2>
+        <p>Hoya Hacks is Georgetown's premier hackathon. We are gathering 300 talented students for 36-hours this winter to build and innovate in both software and hardware, as part of a larger technological revolution at Georgetown.</p>
+        <p><span class="highlight">No experience necessary.</span> We invite you to come learn something new!</p>
+      </div>
+    </section>
     
-    <div class="row">
-      <!-- Begin MailChimp Signup Form -->
-      <div id="mc_embed_signup" class="col-md-12">
-        <form action="http://hoyahacks.us11.list-manage.com/subscribe/post?u=f55885e2bcd3f02b15c63562a&amp;id=f639714c6d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div id="mc_embed_signup_scroll">
-            <div class="row">
-              <div class="mc-field-group">
-                <!-- <label for="mce-EMAIL">Email Address </label> -->
-                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your .edu email">
-              </div>
-              <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-              </div> 
+    <section class="pane row schedule">
+      <div class="content">
+        <h2>Schedule</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="title">Friday</div>
+            <div class="schedule-item">
+              <div class="time highlight">5:00pm</div>
+              <div class="description">Check-in</div>
             </div>
-            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div class="row">
-              <div style="position: absolute; left: -5000px;"><input type="text" name="b_f55885e2bcd3f02b15c63562a_f639714c6d" tabindex="-1" value=""></div>
-              <div class="clear text-center"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn"></div>
+            <div class="schedule-item">
+              <div class="time highlight">8:00pm</div>
+              <div class="description">Opening Ceremonies</div>
+            </div>
+            <div class="schedule-item">
+              <div class="time highlight">9:00pm</div>
+              <div class="description">Dinner + Hacking starts</div>
+            </div>
+            <div class="schedule-item">
+              <div class="time highlight">12:00am</div>
+              <div class="description">Midnight Snack</div>
             </div>
           </div>
-        </form>
+          <div class="col-md-4">
+            <div class="title">Saturday</div>
+            <div class="schedule-item">
+              <div class="time highlight">7:00am</div>
+              <div class="description">Breakfast</div>
+            </div>
+            <div class="schedule-item">
+              <div class="time highlight">1:00pm</div>
+              <div class="description">Lunch</div>
+            </div>
+            <div class="schedule-item">
+              <div class="time highlight">6:00pm</div>
+              <div class="description">Dinner</div>
+            </div>
+            <div class="schedule-item">
+              <div class="time highlight">12:00am</div>
+              <div class="description">Midnight Snack</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="title">Sunday</div>
+            <div class="schedule-item">
+              <div class="time highlight">9:00am</div>
+              <div class="description">Project Submission, Breakfast</div>
+            </div>
+            <div class="schedule-item">
+              <div class="time highlight">10:00am</div>
+              <div class="description">Science Fair</div>
+            </div>
+            <div class="schedule-item">
+              <div class="time highlight">11:30am</div>
+              <div class="description">Judges Convene</div>
+            </div>
+            <div class="schedule-item">
+              <div class="time highlight">12:00pm</div>
+              <div class="description">Prizes, Closing Ceremonies</div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="dog-holder">
+              <img src="img/dog-blue.png">
+            </div>
+            <div class="speech-bubble">
+              More details coming soon!
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="row">
-      <div class="col-md-12 contact-us has-gradient">
-        <div class="bulldog-tease">
-          <img src="img/bulldog.png">
-        </div>
-        <div class="questions">
-          <span class="bold">Questions? Want to sponsor?</span><br>
-          Shoot us a note at <a href="mailto:hello@hoyahacks.com" class="contact-email">hello@hoyahacks.com</a>
+    <section class="pane row faq">
+      <div class="content">
+        <h2>FAQ</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="faq-item">
+              <div class="question highlight title">What is a hackathon?</div>
+              <div class="answer">Hoya Hacks is a 36-hour event at Georgetown University that brings together super smart students to build something cool. We provide the resources for you to succeed, no matter your skill level!</div>
+            </div>
+            <div class="faq-item">
+              <div class="question highlight title">Who can attend?</div>
+              <div class="answer">Hoya Hacks is open to any undergraduate at any college. Non-Georgetown students must be at least 18 years old. Unfortunately, at this time high school and graduate students can’t attend.</div>
+            </div>
+            <div class="faq-item">
+              <div class="question highlight title">Do I need to know how to code?</div>
+              <div class="answer">Not at all! Students of all skill levels are encouraged to attend, even if you’ve never written a line of code. We’re prepared to teach you everything you need to learn right here while also supporting the most experienced hackers.</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="faq-item">
+              <div class="question highlight title">Is the event free?</div>
+              <div class="answer">Yes, absolutely! Say thanks to our amazing sponsors. We will provide food, prizes, swag, and crazy fun activities.</div>
+            </div>
+            <div class="faq-item">
+              <div class="question highlight title">What should I bring?</div>
+              <div class="answer">Bring your student ID for entrance, and your laptop and charger for hacking. We also recommend toiletries for hygiene, a change of clothes, and a lseeping bag, along with any other items you prefer to travel with!</div>
+            </div>
+            <div class="faq-item">
+              <div class="question highlight title">How will I get there?</div>
+              <div class="answer">We will be sending busses to nearby cities, and we are offering reimbursements up to $100 for your least expensive route. We want to be able to sponsor as many hackers as possible!</div>
+            </div>
+            <div class="faq-item">
+              <div class="question highlight title">When is the deadline to sign up?</div>
+              <div class="answer">Signups will close on January 18th.</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="faq-item">
+              <div class="question highlight title">What if I don't have a team?</div>
+              <div class="answer">We will have team-forming events, in addition to other activities where you can mingle with other hackers! Feel free to join any team that has less than 4 people.</div>
+            </div>
+            <div class="faq-item">
+              <div class="question highlight title">I'm a first time hackathoner!</div>
+              <div class="answer">No need to fear! We're so excited to share this experience with you. There will be tons of workshops to get you started, and our goal is for you to learn something new and make some new friends. We</div>
+            </div>
+            <div class="faq-item">
+              <div class="question highlight title">Is there a code of conduct?</div>
+              <div class="answer">We want all hackers to feel welcome and comfortable during their time here! You can read more about it <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">here</a>.</div>
+            </div>
+            <div class="faq-item">
+              <div class="question highlight title">I have more questions!</div>
+              <div class="answer">Shoot us a note at <a href="mailto:hello@hoyahacks.com">hello@hoyahacks.com</a>.</div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="pane row sponsors">
+      <div class="content">
+        <h2>Sponsors</h2>
+        <div class="logo-holder">
+          <div class="logo col-md-2 col-md-offset-5">
+            <img src="img/sponsors/twitter.png">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pane row partners">
+      <div class="content">
+        <h2>University Partners</h2>
+        <div class="logo-holder">
+          <div class="col-md-3 logo">
+            <img src="img/partners/gucec.png">
+          </div>
+          <div class="col-md-3 logo">
+            <img src="img/partners/startuphoyas1.png">
+          </div>
+          <div class="col-md-3 logo">
+            <img src="img/partners/guwc-w.png">
+          </div>
+          <div class="col-md-3 logo">
+            <img src="img/partners/scs.png">
+          </div>
+          <div class="col-md-2 logo col-md-offset-5">
+            <img src="img/partners/uis.png">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer pane row" id="footer">
+      <div class="organizers col-md-4 hidden-sm hidden-xs">
+        <div class="row">
+          <div class="col-md-12">
+            <span class="title">Organizers</span>
+          </div>
+          <div class="col-md-6">
+            <div>Taylor Wan</div>
+            <div>Nicholas Chapman</div>
+            <div>Min Lee</div>
+            <div>Olivia Duff</div>
+            <div>Guy Burstein</div>
+            <div>Sarah Guan</div>
+            <div>Barry Goldsmith</div>
+          </div>
+          <div class="col-md-6">
+            <div>Casandra Schwartz</div>
+            <div>Kay-Anne Reed</div>
+            <div>Colin Mack</div>
+            <div>Josh Kang</div>
+            <div>Angela Yang</div>
+            <div>Kevin Barrow</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-image col-md-4">
+        <div class="footer-logo">
+          <img src="img/logo-w.png" class="logo">
+        </div>
+        <div class="footer-dog">
+          <img src="img/dog-pink.png">
+        </div>
+      </div>
+      <div class="contact col-md-4">
+        <div class="title">Contact</div>
+        <ul class="emails">
+          <li><a href="mailto:hello@hoyahacks.com">hello@hoyahacks.com</a></li>
+          <li><a href="mailto:sponsor@hoyahacks.com">sponsor@hoyahacks.com</a></li>
+        </ul>
+        <div class="title">In partnership with</div>
+        <div class="mlh-logo">
+          <img src="img/partners/mlh-w.png">
+        </div>
+      </div>
+    </section>
 
   </div>
-
-  <script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-  <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-  <!--End mc_embed_signup-->
 
   <!-- Google Analytics -->
   <script>
