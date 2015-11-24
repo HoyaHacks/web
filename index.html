@@ -19,7 +19,7 @@
     <!-- <img src="img/logo-w.png" class="logo"> -->
     <!-- <img src="img/bulldog.png"> -->
 
-    <section class="pane row splash" id="splash">
+    <section class="pane row splash active" id="splash" pane="splash">
       <div class="content">
         <div class="title-row location">
           Georgetown University
@@ -39,8 +39,9 @@
       </div>
     </section>
 
-    <nav class="breadcrumbs row" id="breadcrumbs">
+    <nav class="breadcrumbs row hidden-xs" id="breadcrumbs">
       <ul class="nav">
+        <li id="splash" class="hide"></li>
         <li id="about"><a href="#">About</a></li>
         <li id="schedule"><a href="#">Schedule</a></li>
         <li id="faq"><a href="#">FAQ</a></li>
@@ -49,7 +50,7 @@
       </ul>
     </nav>
 
-    <section class="pane row about">
+    <section class="pane row about" pane="about">
       <div class="content">
         <h2>What is Hoya Hacks?</h2>
         <p>Hoya Hacks is Georgetown's premier hackathon. We are gathering 300 talented students for 36-hours this winter to build and innovate in both software and hardware, as part of a larger technological revolution at Georgetown.</p>
@@ -57,7 +58,7 @@
       </div>
     </section>
     
-    <section class="pane row schedule">
+    <section class="pane row schedule" pane="schedule">
       <div class="content">
         <h2>Schedule</h2>
         <div class="row">
@@ -130,7 +131,7 @@
       </div>
     </section>
 
-    <section class="pane row faq">
+    <section class="pane row faq" pane="faq">
       <div class="content">
         <h2>FAQ</h2>
         <div class="row">
@@ -188,7 +189,7 @@
       </div>
     </section>
 
-    <section class="pane row sponsors">
+    <section class="pane row sponsors" pane="sponsors">
       <div class="content">
         <h2>Sponsors</h2>
         <div class="logo-holder">
@@ -199,7 +200,7 @@
       </div>
     </section>
 
-    <section class="pane row partners">
+    <section class="pane row partners" pane="partners">
       <div class="content">
         <h2>University Partners</h2>
         <div class="logo-holder">

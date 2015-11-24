@@ -85,24 +85,28 @@ h2 {
 .breadcrumbs {
   background: #fff;
   font-size: 1em;
-  padding: 0.8em 1em; }
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1px; }
   .breadcrumbs li {
     display: inline-block;
     border: 0.2em solid #fff;
-    font-size: 1.2em; }
+    font-size: 1.2em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em; }
     .breadcrumbs li a {
       color: #888; }
       .breadcrumbs li a:hover, .breadcrumbs li a:active, .breadcrumbs li a:focus, .breadcrumbs li a:active:focus, .breadcrumbs li a:focus:active {
         background: inherit; }
-  .breadcrumbs #about:hover {
+  .breadcrumbs #about.active, .breadcrumbs #about:hover {
     border-bottom-color: #d63756; }
-  .breadcrumbs #schedule:hover {
+  .breadcrumbs #schedule.active, .breadcrumbs #schedule:hover {
     border-bottom-color: #47adaa; }
-  .breadcrumbs #faq:hover {
+  .breadcrumbs #faq.active, .breadcrumbs #faq:hover {
     border-bottom-color: #fdcb5e; }
-  .breadcrumbs #sponsors:hover {
+  .breadcrumbs #sponsors.active, .breadcrumbs #sponsors:hover {
     border-bottom-color: #202f57; }
-  .breadcrumbs #partners:hover {
+  .breadcrumbs #partners.active, .breadcrumbs #partners:hover {
     border-bottom-color: #f05e3c; }
   .breadcrumbs.fixed {
     position: fixed;
@@ -140,6 +144,9 @@ h2 {
   display: inline-block; }
 .schedule .dog-holder {
   max-width: 100px; }
+  @media screen and (max-width: 500px) {
+    .schedule .dog-holder {
+      max-width: 60px; } }
 
 .speech-bubble {
   background: #fff;

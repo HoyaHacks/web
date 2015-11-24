@@ -142,12 +142,16 @@ h2 {
 .breadcrumbs {
     background: $white;
     font-size: 1em;
-    padding: 0.8em 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1px;
 
     li {
         display: inline-block;
         border: 0.2em solid $white;
         font-size: 1.2em;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
 
         a {
             color: $light-gray;
@@ -162,20 +166,35 @@ h2 {
         }
     }
 
-    #about:hover {
-        border-bottom-color: $about;
+    #about {
+        &.active,
+        &:hover {
+            border-bottom-color: $about;
+        }
     }
-    #schedule:hover {
-        border-bottom-color: $schedule;
+    #schedule {
+        &.active,
+        &:hover {
+            border-bottom-color: $schedule;
+        }
     }
-    #faq:hover {
-        border-bottom-color: $faq;
+    #faq {
+        &.active,
+        &:hover {
+            border-bottom-color: $faq;
+        }
     }
-    #sponsors:hover {
-        border-bottom-color: $sponsors;
+    #sponsors {
+        &.active,
+        &:hover {
+            border-bottom-color: $sponsors;
+        }
     }
-    #partners:hover {
-        border-bottom-color: $partners;
+    #partners {
+        &.active,
+        &:hover {
+            border-bottom-color: $partners;
+        }
     }
 
     &.fixed {
@@ -232,6 +251,10 @@ h2 {
     }
     .dog-holder {
         max-width: 100px;
+
+        @media screen and (max-width: $break-sm) {
+            max-width: 60px;
+        }
     }
 }
 
