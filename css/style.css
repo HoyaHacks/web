@@ -77,9 +77,11 @@ h2 {
     .splash .action-buttons .btn {
       font-size: 0.8em;
       border: 5px solid #47adaa; }
-      .splash .action-buttons .btn:hover {
+      .splash .action-buttons .btn:hover, .splash .action-buttons .btn:focus, .splash .action-buttons .btn:active {
         border-color: #fff;
-        color: #fff; }
+        color: #fff;
+        outline: none;
+        box-shadow: none; }
 
 /* breadcrumbs */
 .breadcrumbs {

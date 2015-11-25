@@ -129,9 +129,13 @@ h2 {
             font-size: 0.8em;
             border: 5px solid $teal;
 
-            &:hover {
+            &:hover,
+            &:focus,
+            &:active {
                 border-color: $white;
                 color: #fff;
+                outline: none;
+                box-shadow: none;
             }
         }
     }

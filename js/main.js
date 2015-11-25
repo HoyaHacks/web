@@ -54,7 +54,7 @@ function headerFix() {
     var navHeight = $nav.outerHeight();
     if (scroll > winHeight - navHeight && winWidth > 920) {
         $nav.addClass('fixed');
-        $splash.css('margin-bottom',navHeight);
+        $splash.css('margin-bottom', navHeight);
 
     } else {
         $nav.removeClass('fixed');
@@ -80,14 +80,22 @@ function activatePane(id) {
 
 function updateActive() {
     var pos = $(window).scrollTop();
-    console.log(pos);
-    var panes = $('.pane');
-    for ( p in panes ) {
-        var panePos = p.offset().top;
-        if (panePos < pos) {
-            var id = p.attr('id');
-            activatePane(id);
+    var panes = [];
+    $('#breadcrumbs li').each(function() {
+        panes.push($(this).attr('id'));
+    });
+    var curPane = "splash";
+    for (var i in panes) {
+        var $pane = $('.pane.' + panes[i]);
+        var offset = $pane.outerHeight()/3;
+        if (offset < 100) {
+            offset = 200;
         }
-
+        if (pos > $pane.offset().top - offset) {
+            curPane = panes[i];
+        }
+    }
+    if (curPane !== "splash") {
+        activatePane(curPane);
     }
 }
