@@ -203,12 +203,6 @@ h2 {
 .footer {
   border-bottom-color: transparent;
   padding-top: 4em; }
-  .footer .organizers,
-  .footer .contact {
-    color: #888;
-    font-size: 0.8em; }
-  .footer .contact a {
-    color: #888; }
   .footer .footer-logo,
   .footer .footer-dog {
     max-width: 300px;
@@ -217,9 +211,16 @@ h2 {
   .footer .footer-dog {
     margin-top: 1em;
     max-width: 100px; }
-  .footer .mlh-logo {
-    opacity: 0.6;
-    width: 100px;
-    display: inline-block; }
+  .footer .social-links {
+    margin-top: 1em; }
+    .footer .social-links li {
+      display: inline-block;
+      margin: 0 0.3em; }
+    .footer .social-links a {
+      font-size: 1.5em;
+      color: #fff;
+      opacity: 0.7; }
+      .footer .social-links a:hover {
+        opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */
