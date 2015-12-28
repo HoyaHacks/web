@@ -314,8 +314,16 @@ h2 {
 
 .logo-holder {
     .logo {
-        height: 80px;
-        margin-bottom: 1em;
+        margin-bottom: 40px;
+        &.gold {
+            height: 130px;
+        }
+        &.silver {
+            height: 70px;
+        }
+        &.api {
+            height: 50px;
+        }
     }
 }
 

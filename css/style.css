@@ -186,8 +186,13 @@ h2 {
 /* sponsors */
 /* partners */
 .logo-holder .logo {
-  height: 80px;
-  margin-bottom: 1em; }
+  margin-bottom: 40px; }
+  .logo-holder .logo.gold {
+    height: 130px; }
+  .logo-holder .logo.silver {
+    height: 70px; }
+  .logo-holder .logo.api {
+    height: 50px; }
 
 .sponsors {
   background: #fff; }
