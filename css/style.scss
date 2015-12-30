@@ -313,16 +313,22 @@ h2 {
 /* partners */
 
 .logo-holder {
+    text-align: center;
+    margin-bottom: 3em;
+
     .logo {
-        margin-bottom: 40px;
+        display: inline-block;
+        margin: 10px 20px;
+        height: 70px;
+
         &.gold {
             height: 130px;
         }
         &.silver {
-            height: 70px;
+            height: 80px;
         }
         &.api {
-            height: 50px;
+            height: 40px;
         }
     }
 }
