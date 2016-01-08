@@ -325,10 +325,12 @@ h2 {
             height: 130px;
         }
         &.silver {
-            height: 80px;
+            height: 70px;
+            max-width: 300px;
         }
         &.api {
             height: 40px;
+            max-width: 150px;
         }
     }
 }
