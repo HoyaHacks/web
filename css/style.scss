@@ -67,6 +67,7 @@ h2 {
     background: $teal;
     color: $white;
     padding: 0.5em 1em;
+    font-size: 2em;
 }
 
 .bold { font-weight: 700; }
@@ -136,6 +137,13 @@ h2 {
                 color: #fff;
                 outline: none;
                 box-shadow: none;
+            }
+        }
+
+        .helper {
+            font-size: 0.4em;
+            @media screen and (max-width: $break-sm) {
+                font-size: 0.6em;
             }
         }
     }

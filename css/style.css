@@ -29,7 +29,8 @@ h2 {
   text-transform: uppercase;
   background: #47adaa;
   color: #fff;
-  padding: 0.5em 1em; }
+  padding: 0.5em 1em;
+  font-size: 2em; }
 
 .bold {
   font-weight: 700; }
@@ -82,6 +83,11 @@ h2 {
         color: #fff;
         outline: none;
         box-shadow: none; }
+    .splash .action-buttons .helper {
+      font-size: 0.4em; }
+      @media screen and (max-width: 500px) {
+        .splash .action-buttons .helper {
+          font-size: 0.6em; } }
 
 /* breadcrumbs */
 .breadcrumbs {
