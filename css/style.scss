@@ -333,12 +333,16 @@ h2 {
             height: 130px;
         }
         &.silver {
-            height: 70px;
+            height: 90px;
             max-width: 300px;
         }
         &.api {
-            height: 40px;
-            max-width: 150px;
+            height: 60px;
+            max-width: 180px;
+        }
+        &.contrib {
+            height: 45px;
+            max-width: 120px;
         }
     }
 }

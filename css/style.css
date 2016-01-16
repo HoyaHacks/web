@@ -201,11 +201,14 @@ h2 {
     .logo-holder .logo.gold {
       height: 130px; }
     .logo-holder .logo.silver {
-      height: 70px;
+      height: 90px;
       max-width: 300px; }
     .logo-holder .logo.api {
-      height: 40px;
-      max-width: 150px; }
+      height: 60px;
+      max-width: 180px; }
+    .logo-holder .logo.contrib {
+      height: 45px;
+      max-width: 120px; }
 
 .sponsors {
   background: #fff; }
