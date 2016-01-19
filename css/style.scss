@@ -67,6 +67,7 @@ h2 {
     background: $teal;
     color: $white;
     padding: 0.5em 1em;
+    font-size: 2em;
 }
 
 .bold { font-weight: 700; }
@@ -137,6 +138,13 @@ h2 {
                 color: #fff;
                 outline: none;
                 box-shadow: none;
+            }
+        }
+
+        .helper {
+            font-size: 0.4em;
+            @media screen and (max-width: $break-sm) {
+                font-size: 0.6em;
             }
         }
     }
@@ -314,9 +322,29 @@ h2 {
 /* partners */
 
 .logo-holder {
+    text-align: center;
+    margin-bottom: 3em;
+
     .logo {
-        height: 80px;
-        margin-bottom: 1em;
+        display: inline-block;
+        margin: 10px 20px;
+        height: 70px;
+
+        &.gold {
+            height: 130px;
+        }
+        &.silver {
+            height: 90px;
+            max-width: 300px;
+        }
+        &.api {
+            height: 60px;
+            max-width: 180px;
+        }
+        &.contrib {
+            height: 45px;
+            max-width: 120px;
+        }
     }
 }
 
