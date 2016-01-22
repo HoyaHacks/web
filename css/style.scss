@@ -10,6 +10,7 @@ $red: #ed3848;
 $pink: #d63756;
 $light-orange: #ed6f40;
 $yellow: #fdcb5e;
+$light-blue: #6db3c3;
 
 $white: #fff;
 $opaque-white: rgba(255, 255, 255, .8);
@@ -55,6 +56,10 @@ h2 {
     margin-bottom: 1em;
 }
 
+a {
+    color: $light-blue;
+}
+
 .content {
     max-width: 1200px;
     width: 90%;
@@ -90,6 +95,20 @@ h2 {
 :hover {
     transition: color linear .15s;
     transition: color linear .15s;
+}
+
+/* flash */
+.top-flash {
+    position: absolute;
+    background: $teal;
+    padding: 1em;
+    font-size: 1.2em;
+    width: 100%;
+
+    a {
+        color: $white;
+        text-decoration: underline;
+    }
 }
 
 

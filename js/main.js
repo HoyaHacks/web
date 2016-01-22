@@ -19,6 +19,10 @@ function init() {
     centerSplashContent();
 }
 
+function flashExit() {
+    $('#flash').slideUp();
+}
+
 function scrollInit() {
     headerFix();
     updateActive();

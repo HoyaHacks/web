@@ -19,6 +19,9 @@ h2 {
   font-weight: 300;
   margin-bottom: 1em; }
 
+a {
+  color: #6db3c3; }
+
 .content {
   max-width: 1200px;
   width: 90%;
@@ -51,6 +54,17 @@ h2 {
 :hover {
   transition: color linear .15s;
   transition: color linear .15s; }
+
+/* flash */
+.top-flash {
+  position: absolute;
+  background: #47adaa;
+  padding: 1em;
+  font-size: 1.2em;
+  width: 100%; }
+  .top-flash a {
+    color: #fff;
+    text-decoration: underline; }
 
 /* splash screen */
 .splash {
