@@ -208,10 +208,10 @@ a {
 /* partners */
 .logo-holder {
   text-align: center;
-  margin-bottom: 3em; }
+  margin-bottom: 30px; }
   .logo-holder .logo {
     display: inline-block;
-    margin: 10px 20px;
+    margin: 20px 20px;
     height: 70px; }
     .logo-holder .logo.gold {
       height: 130px; }
