@@ -125,6 +125,8 @@ a {
     border-bottom-color: #d63756; }
   .breadcrumbs #schedule.active, .breadcrumbs #schedule:hover {
     border-bottom-color: #47adaa; }
+  .breadcrumbs #prizes.active, .breadcrumbs #prizes:hover {
+    border-bottom-color: #3f2255; }
   .breadcrumbs #faq.active, .breadcrumbs #faq:hover {
     border-bottom-color: #fdcb5e; }
   .breadcrumbs #sponsors.active, .breadcrumbs #sponsors:hover {
@@ -192,6 +194,18 @@ a {
   .speech-bubble:after {
     border-right-color: #fff;
     left: -1.85em; }
+
+/* prizes */
+.prizes {
+  background: #fff;
+  color: #888; }
+  .prizes .prize-item {
+    text-align: left; }
+    .prizes .prize-item .prize {
+      margin: 1em auto 0.5em; }
+  .prizes h2,
+  .prizes .highlight {
+    color: #3f2255; }
 
 /* faq */
 .faq {

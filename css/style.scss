@@ -19,6 +19,7 @@ $light-gray: #888;
 
 $about: $pink;
 $schedule: $teal;
+$prizes: $purple;
 $faq: $yellow;
 $sponsors: $navy;
 $partners: $orange;
@@ -210,6 +211,12 @@ a {
             border-bottom-color: $schedule;
         }
     }
+    #prizes {
+        &.active,
+        &:hover {
+            border-bottom-color: $prizes;
+        }
+    }
     #faq {
         &.active,
         &:hover {
@@ -315,6 +322,28 @@ a {
     &:after {
         border-right-color: $white;
         left: -1.85em;
+    }
+}
+
+
+/* prizes */
+
+.prizes {
+    // background: url(../img/bg-blue-overlay.jpg);
+    background: $white;
+    color: $light-gray;
+
+    .prize-item {
+        text-align: left;
+
+        .prize {
+            margin: 1em auto 0.5em;
+        }
+    }
+
+    h2,
+    .highlight {
+        color: $prizes;
     }
 }
 
