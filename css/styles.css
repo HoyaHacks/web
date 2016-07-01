@@ -5,7 +5,8 @@ body {
     text-align: center;
     color: #fff;
     background: rgb(42,42,42);
-    background: url(../img/bg-blue.jpg);
+    background: url(../img/color-bg-w-a.jpg);
+    background-size: 100% 100%;
 }
 
 .navy { color: #202f57; }
@@ -29,14 +30,6 @@ img {
     content: '';
     background-image: repeating-linear-gradient(
         45deg,
-        #202f57 0,
-        #202f57 11%,
-        #057d93 11%,
-        #057d93 22%,
-        #47adaa 22%,
-        #47adaa 33%,
-        #3f2255 33%,
-        #3f2255 44%,
         #a73368 44%,
         #a73368 55%,
         #f05e3c 55%,
