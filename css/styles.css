@@ -5,7 +5,7 @@ body {
     text-align: center;
     color: #fff;
     background: rgb(42,42,42);
-    background: url(../img/color-bg-w-a.jpg);
+    background: url(../img/color-bg.jpg);
     background-size: 100% 100%;
 }
 
@@ -50,7 +50,6 @@ img {
 
 .logo-holder {
     margin-top: 6em;
-    opacity: 0.9;
 }
 
 .logo-holder img {
@@ -96,14 +95,12 @@ input:focus {
 .questions {
     display: inline-block;
     font-size: 1.5em;
-    opacity: 0.8;
     margin-top: 1em;
 }
 
 .bulldog-tease {
     display: inline-block;
     padding-right: 1em;
-    opacity: .8;
 }
 
 .contact-email {
