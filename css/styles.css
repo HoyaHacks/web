@@ -3,10 +3,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    color: #fff;
-    background: rgb(42,42,42);
-    background: url(../img/color-bg-w-a.jpg);
-    background-size: 100% 100%;
+    color: rgb(42,42,42);
 }
 
 .navy { color: #202f57; }
@@ -49,8 +46,11 @@ img {
 }
 
 .logo-holder {
-    margin-top: 6em;
-    opacity: 0.9;
+    padding: 12em 0 0;
+}
+
+.fixed-left {
+    position: fixed;
 }
 
 .logo-holder img {
@@ -80,6 +80,7 @@ input:focus {
     margin-top: 0.2em;
     margin-bottom: 1em;
     text-transform: uppercase;
+    color: #47adaa;
 }
 
 #messages {
@@ -88,22 +89,20 @@ input:focus {
 }
 
 .contact-us {
-    margin-top: 100px;
     background: rgb(42, 42, 42);
-    padding: 5em 2em 4em;
+    color: #fff;
+    padding: 20em 0 50em;
 }
 
 .questions {
     display: inline-block;
     font-size: 1.5em;
-    opacity: 0.8;
     margin-top: 1em;
 }
 
 .bulldog-tease {
     display: inline-block;
     padding-right: 1em;
-    opacity: .8;
 }
 
 .contact-email {
@@ -115,9 +114,34 @@ input:focus {
     color: #fff;
 }
 
-@media only screen and (max-width : 767px){
+@media only screen and (max-width: 1250px) {
+    .dates {
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
     .dates {
         font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .contact-us {
+        margin-top: 10em;
+        padding: 4em 2em 5em;
+    }
+    .affix {
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 767px){
+    .contact-us {
+        margin-top: 6em;
+    }
+    .logo-holder {
+        padding-top: 8em;
     }
 }
 
