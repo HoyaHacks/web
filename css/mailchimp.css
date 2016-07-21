@@ -14,7 +14,7 @@
     text-align: center;
     border-bottom: 1px solid gray;
     width: 600px;
-    max-width: 90%;
+    max-width: 75%;
 }
 
 #mc_embed_signup .mce_inline_error {
@@ -28,7 +28,7 @@
     font-size: 1.8em;
     height: auto;
     padding: 0.7em 1.2em;
-    margin: 0.5em 0 0;
+    margin: 1em 0 0;
 }
 #mc_embed_signup .button:hover {
     background: #ed6f40;
@@ -50,7 +50,7 @@
 
 
 
-@media only screen and (max-width : 979px){
+/*@media only screen and (max-width : 979px){
     #mc_embed_signup {
         font-size: 0.9em;
     }
@@ -71,6 +71,15 @@
 @media only screen and (max-width : 520px){
     #mc_embed_signup {
         font-size: 0.6em;
+    }
+    #mc_embed_signup .mc-field-group .email {
+        width: 350px;
+    }
+}*/
+
+@media only screen and (max-width : 600px){
+    #mc_embed_signup {
+        font-size: 0.8em;
     }
     #mc_embed_signup .mc-field-group .email {
         width: 350px;

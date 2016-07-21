@@ -29,7 +29,14 @@ img {
     width: 600px;
 }
 
-.has-gradient:before {
+.has-gradient {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.has-gradient:after {
     content: '';
     background-image: repeating-linear-gradient(
         45deg,
@@ -44,11 +51,7 @@ img {
         #ed6f40 88%,
         #ed6f40 100% /* determines size */    );
     display: block;
-    width: 100%;
-    height: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    height: 8px;
 }
 
 .logo-holder {
@@ -78,10 +81,9 @@ input:focus {
 }
 
 .dates {
-    font-size: 2.8em;
+    font-size: 2.6em;
     margin-top: 0.2em;
     margin-bottom: 1em;
-    text-transform: uppercase;
     color: #47adaa;
 }
 
@@ -91,8 +93,7 @@ input:focus {
 }
 
 .contact-us {
-    margin-top: 100px;
-    /*background: rgb(42, 42, 42);*/
+    margin-top: 2em;
     padding: 5em 2em 4em;
     color: #999;
 }
@@ -117,14 +118,11 @@ input:focus {
     color: #999;
 }
 
-@media only screen and (max-width : 767px){
-    .dates {
-        font-size: 3em;
+@media only screen and (max-width : 600px){
+    .main-content {
+        width: 400px;
     }
-}
-
-@media only screen and (max-width : 520px){
     .dates {
-        font-size: 2em;
+        font-size: 2.3em;
     }
 }
