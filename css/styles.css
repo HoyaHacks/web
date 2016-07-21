@@ -5,6 +5,7 @@ body {
     text-align: center;
     background: #fff;
     color: rgb(42,42,42);
+    font-size: 12px;
 }
 
 .navy { color: #202f57; }
@@ -24,6 +25,10 @@ img {
     max-height: 100%;
 }
 
+.main-content {
+    width: 600px;
+}
+
 .has-gradient:before {
     content: '';
     background-image: repeating-linear-gradient(
@@ -40,10 +45,10 @@ img {
         #ed6f40 100% /* determines size */    );
     display: block;
     width: 100%;
-    height: 1em;
+    height: 10px;
     position: absolute;
     left: 0;
-    top: 0;
+    bottom: 0;
 }
 
 .logo-holder {
@@ -73,7 +78,7 @@ input:focus {
 }
 
 .dates {
-    font-size: 4em;
+    font-size: 2.8em;
     margin-top: 0.2em;
     margin-bottom: 1em;
     text-transform: uppercase;
@@ -87,9 +92,9 @@ input:focus {
 
 .contact-us {
     margin-top: 100px;
-    background: rgb(42, 42, 42);
+    /*background: rgb(42, 42, 42);*/
     padding: 5em 2em 4em;
-    color: #fff;
+    color: #999;
 }
 
 .questions {
@@ -104,12 +109,12 @@ input:focus {
 }
 
 .contact-email {
-    color: #fff;
+    color: #999;
     text-decoration: underline;
 }
 
 .contact-email:hover {
-    color: #fff;
+    color: #999;
 }
 
 @media only screen and (max-width : 767px){
