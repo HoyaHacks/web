@@ -21,19 +21,32 @@ body {
 
 .bold { font-weight: 700; }
 
+p { margin: 0; }
+
 img {
     max-height: 100%;
+    max-width: 100%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.sidebar {
+    width: 400px;
+    top: 0;
+    bottom: 0;
 }
 
 .main-content {
-    width: 600px;
+    margin-left: 400px;
+    background: #eee;
+    padding: 5em 0;
 }
 
 .has-gradient {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
 }
 
 .has-gradient:after {
@@ -52,10 +65,10 @@ img {
         #ed6f40 100% /* determines size */    );
     display: block;
     height: 8px;
-}
-
-.logo-holder {
-    margin-top: 6em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .logo-holder img {
@@ -93,7 +106,6 @@ input:focus {
 }
 
 .contact-us {
-    margin-top: 2em;
     padding: 5em 2em 4em;
     color: #999;
 }
@@ -118,11 +130,12 @@ input:focus {
     color: #999;
 }
 
-@media only screen and (max-width : 600px){
-    .main-content {
-        width: 400px;
+@media only screen and (max-width: 1000px) {
+    .sidebar {
+        position: relative;
+        width: auto;
     }
-    .dates {
-        font-size: 2.3em;
+    .main-content {
+        margin-left: auto;
     }
 }
