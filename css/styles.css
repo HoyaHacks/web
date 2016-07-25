@@ -1,56 +1,37 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import 'https://fonts.googleapis.com/css?family=Inconsolata:700|Roboto+Slab:300';
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
     text-align: center;
-    color: #fff;
-    background: rgb(42,42,42);
-    background: url(../img/color-bg-w-a.jpg);
-    background-size: 100% 100%;
+    color: rgb(42,42,42);
 }
 
-.navy { color: #202f57; }
-.dark-teal { color: #057d93; }
-.teal { color: #47adaa; }
-.purple { color: #3f2255; }
-.magenta { color: #a73368; }
-.orange { color: #f05e3c; }
-.red, .error { color: #ed3848; }
-.pink { color: #d63756; }
-.light-orange { color: #ed6f40; }
-.success { color: #0fd016; }
+h1, h2, h3, h4 {
+    font-family: 'Inconsolata', sans-serif;
+}
 
-.bold { font-weight: 700; }
+h1.hoyahacks {
+    word-spacing: -10px;
+}
+
+body {
+    font-size: 18px;
+}
+
+.contents-container h1 {
+    font-size: 45px;
+}
 
 img {
     max-height: 100%;
 }
 
-.has-gradient:before {
-    content: '';
-    background-image: repeating-linear-gradient(
-        45deg,
-        #a73368 44%,
-        #a73368 55%,
-        #f05e3c 55%,
-        #f05e3c 66%,
-        #ed3848 66%,
-        #ed3848 77%,
-        #d63756 77%,
-        #d63756 88%,
-        #ed6f40 88%,
-        #ed6f40 100% /* determines size */    );
-    display: block;
-    width: 100%;
-    height: 1em;
-    position: absolute;
-    left: 0;
-    top: 0;
+.logo-holder {
+    padding: 12em 0 0;
 }
 
-.logo-holder {
-    margin-top: 6em;
-    opacity: 0.9;
+.fixed-left {
+    position: fixed;
 }
 
 .logo-holder img {
@@ -65,21 +46,11 @@ img {
     color: #fff;
 }
 
-input {
-    padding: 0.375em 0.6em;
-    height: auto;
-    border: 0;
-}
-
-input:focus {
-    outline: none;
-}
-
 .dates {
     font-size: 4em;
     margin-top: 0.2em;
     margin-bottom: 1em;
-    text-transform: uppercase;
+    color: #7FDBFF;
 }
 
 #messages {
@@ -87,23 +58,14 @@ input:focus {
     font-size: 2em;
 }
 
-.contact-us {
-    margin-top: 100px;
-    background: rgb(42, 42, 42);
-    padding: 5em 2em 4em;
-}
-
 .questions {
     display: inline-block;
     font-size: 1.5em;
-    opacity: 0.8;
     margin-top: 1em;
 }
 
 .bulldog-tease {
     display: inline-block;
-    padding-right: 1em;
-    opacity: .8;
 }
 
 .contact-email {
@@ -115,14 +77,214 @@ input:focus {
     color: #fff;
 }
 
-@media only screen and (max-width : 767px){
+/* LAYOUT */
+.left {
+    height: 100%;
+    width: 30%;
+    background-color: #001f3f;
+    color: #7FDBFF;
+    border-right: 5px solid #7FDBFF;
+}
+
+.right {
+    float: left;
+    margin-left: 30%;
+    width:70%;
+    float: right;
+    background: #FAFAFA;
+    color: #0074D9;
+    padding: 10em 0 10em;
+    text-align: left;
+    max-width: 70%;
+}
+
+.top {
+    min-height: 100vh;
+}
+
+/* CONTENTS */
+.nav-left {
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+}
+
+.nav-left li {
+    margin-bottom: 5px;
+}
+
+.nav-left a {
+    color: #7FDBFF;
+}
+
+.centered-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.contents-container {
+    width: 40em;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section a {
+    color: ;
+}
+
+.contents-container h1.attention {
+    font-size: 60px;
+    margin-bottom: 75px;
+}
+
+/* PEOPLE */
+div.people {
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+h2.name {
+    text-align: center;
+    margin-top: 10px;
+}
+
+img.photo {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    border-radius: 2px;
+    border: 2px solid #001f3f;
+}
+
+/* INPUT */
+input {
+    font-size: 16px;
+    outline: none;
+}
+
+input.email {
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #FAFAFA;
+    border-radius: 2px;
+    background: transparent;
+    color: #FAFAFA;
+    transition: 0.3s ease;
+}
+
+/* Generalize out? */
+.email:focus {
+    border-color: #7FDBFF;
+}
+
+.email:focus + input.button {
+    border-color: #7FDBFF;
+    color: #7FDBFF;
+}
+
+input.button.signup {
+    padding: 12px 25px;
+    background: transparent;
+    border: 2px solid #FAFAFA;
+    border-radius: 2px;
+    color: #FAFAFA;
+    /* Hover */
+    cursor: pointer;
+    text-transform: lowercase;
+    transition: 0.3s ease;
+}
+input.button.signup:hover {
+    color: #001f3f;
+    border-color: #7FDBFF;
+    background-color: #7FDBFF;
+}
+/* Irritating. */
+#mc-embedded-subscribe {
+    width: 100%;
+    margin: -2px auto 0px auto;
+}
+
+.signup-container {
+    margin: 20px 0 20px;
+    text-align: center;
+}
+
+/* RESPONSIVENESS */
+@media only screen and (max-width: 1250px) {
+    .dates {
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
     .dates {
         font-size: 3em;
     }
 }
 
-@media only screen and (max-width : 520px){
-    .dates {
-        font-size: 2em;
+@media only screen and (max-width: 992px) {
+    .left {
+        width: inherit;
+        background-color: #001f3f;
+        border: none;
     }
+    .top {
+        border-bottom: 5px solid #7FDBFF;
+    }
+    .right {
+        width: 100%;
+        max-width: 100%;
+        float: inherit;
+        margin: 0;
+    }
+    .affix {
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 767px){
+    div.people {
+        margin-top: 0px;
+    }
+    .col-sm-4 {
+        margin-top: 20px;
+    }
+    .contact-us {
+        margin-top: 6em;
+    }
+    .logo-holder {
+        padding-top: 8em;
+    }
+    body {
+        font-size: 17px;
+    }
+    .contents-container h1.attention {
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width : 520px){
+    .contents-container {
+        max-width: 80%;
+    }
+    body {
+        font-size: 16px;
+    }
+}
+
+/* MODIFIERS */
+.light-text {
+    color: #0074D9;
+}
+.dark-text {
+    color: #001f3f;
 }
