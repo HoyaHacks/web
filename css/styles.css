@@ -81,7 +81,8 @@ img {
 .left {
     height: 100%;
     width: 30%;
-    background-color: #001f3f;
+	/*background-color: #001f3f;*/
+	background-image: url("../img/color-bg-dark.jpg");
     color: #7FDBFF;
     border-right: 5px solid #7FDBFF;
 }
@@ -160,7 +161,8 @@ img.photo {
     margin-left: auto;
     margin-right: auto;
     max-width: 70%;
-    border-radius: 2px;
+	border-radius: 50%;
+    /*border-radius: 2px;*/
     border: 2px solid #001f3f;
 }
 
@@ -234,7 +236,8 @@ input.button.signup:hover {
 @media only screen and (max-width: 992px) {
     .left {
         width: inherit;
-        background-color: #001f3f;
+        /*background-color: #001f3f;*/
+		background-image: url("../img/color-bg-dark.jpg");
         border: none;
     }
     .top {
