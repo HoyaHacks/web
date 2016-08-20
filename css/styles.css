@@ -166,6 +166,13 @@ img.photo {
     border: 2px solid #001f3f;
 }
 
+/* SPONSORS */
+img.sponsorphoto {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+}
+
 /* INPUT */
 input {
     font-size: 16px;
