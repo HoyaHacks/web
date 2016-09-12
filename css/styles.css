@@ -235,6 +235,13 @@ input.button.signup:hover {
     text-align: center;
 }
 
+.signup-button-container {
+	margin: 20px 0 20px;
+	padding: 10px;
+	background-color: #7FDBFF;
+	text-align: center;
+}
+
 /* RESPONSIVENESS */
 @media only screen and (max-width: 1250px) {
     .dates {
