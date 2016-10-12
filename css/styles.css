@@ -181,6 +181,27 @@ img.sponsorphoto {
 	display: inline-block;
 }
 
+/* SCHEDULE */
+
+.schedule {
+	width: 100%;
+	font-size: 1.2em;
+}
+
+.time {
+	color: #337ab7;
+	text-align: left;
+}
+
+.schedule-day {
+	padding-top: 15px;
+	text-align: center;
+}
+
+.schedule-item {
+	text-align: right;
+}
+
 /* INPUT */
 input {
     font-size: 16px;
