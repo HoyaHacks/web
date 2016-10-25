@@ -303,6 +303,8 @@ input.button.signup:hover {
     }
     .col-sm-4 {
         margin-top: 20px;
+		display: table-cell;
+		vertical-align: middle;
     }
     .contact-us {
         margin-top: 6em;
