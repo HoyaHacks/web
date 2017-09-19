@@ -281,7 +281,8 @@ input.button.signup:hover {
     .left {
         width: inherit;
         /*background-color: #001f3f;*/
-		background-image: url("../img/color-bg-dark.jpg");
+		/*background-image: url("../img/color-bg-dark.jpg");*/
+	    	background-image: url("../img/Background2018.png");
         border: none;
     }
     .top {
