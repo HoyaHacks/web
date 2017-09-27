@@ -289,8 +289,7 @@ input.button.signup:hover {
         width: inherit;
         /*background-color: #001f3f;*/
 		/*background-image: url("../img/color-bg-dark.jpg");*/
-	    	background-image: url("../img/Background2018.png") no-repeat;
-	    background-size = 100%;
+	    	background-image: url("../img/Background2018.png");
         border: none;
     }
     .top {
