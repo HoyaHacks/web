@@ -83,9 +83,16 @@ img {
     width: 30%;
 	/*background-color: #001f3f;*/
 	/*background-image: url("../img/color-bg-dark.jpg");*//*Old Background*/
+	/**
 	background-image: url("../img/Background2018.png");
     color: #7FDBFF;
     border-right: 5px solid #7FDBFF;
+	**/
+	background-image: url("../img/Background2018.png") no-repeat;
+	background-size: 100%;
+    color: #7FDBFF;
+    border-right: 5px solid #7FDBFF;
+	
 }
 
 .right {
@@ -282,7 +289,8 @@ input.button.signup:hover {
         width: inherit;
         /*background-color: #001f3f;*/
 		/*background-image: url("../img/color-bg-dark.jpg");*/
-	    	background-image: url("../img/Background2018.png");
+	    	background-image: url("../img/Background2018.png") no-repeat;
+	    background-size = 100%;
         border: none;
     }
     .top {
