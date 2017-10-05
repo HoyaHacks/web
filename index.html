@@ -311,6 +311,7 @@
 -->
 
 <!--91817 Photos Insert-->
+<!--
 	 <div class="section dark-text">
 		 <p></p><br clear="all" />
             <h1 id="photos">Photos</h1>
@@ -341,18 +342,35 @@
 <!--End 91817 Photos Insert-->
 
 
+<!--10517 Image Slideshow Insert-->
+<div class="slideshow">
+  <img class="mySlides" src="./img/fall2016image1.jpg" style="width:100%">
+  <img class="mySlides" src="./img/fall2016image3.jpg" style="width:100%">
+  <img class="mySlides" src="./img/fall2016image5.jpg" style="width:100%">
 
+  <button class="left-button" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="right-button" onclick="plusDivs(1)">&#10095;</button>
+</div>
 
-<!--10517 Image Carousel Insert-->
-<!--
-<div id="outerbox">
-<div id="sliderbox">
-<img src="./img/fall2016image3.jpg"/>
-<img src="./img/fall2016image3.jpg"/>
-<img src="./img/fall2016image3.jpg"/>
-<img src="./img/fall2016image3.jpg"/>
-</div>
-</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
 <!--End 10517 Image Carousel Insert-->
 
 
