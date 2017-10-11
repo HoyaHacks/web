@@ -82,10 +82,10 @@ img {
 .left {
     height: 100%;
     width: 30%;
-	/*background-color: #001f3f;*/
+	background-color: #031527;
 	/*background-image: url("../img/color-bg-dark.jpg");*//*Old Background*/
 	
-	background-image: url("../img/Background2018.png");
+	/*background-image: url("../img/Background2018.png");*/
     color: #7FDBFF;
     border-right: 5px solid #7FDBFF;
 	
