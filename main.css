@@ -9,7 +9,34 @@
   text-decoration: none;
 }
 
+.sponsors img {
+    padding: 25px;
+    height: 135px;
+    flex: auto;
+    width: auto;
+}
 
+.blue-section {
+  background-color: #4457C0;
+  color: rgb(236, 240, 241);
+}
+
+.blue-section h2, .blue-section h3 {
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.blue-section h2::after {
+  content: "...";
+
+  color: #D5D5F7;
+
+  display: block;
+}
+
+.blue-section a, .blue-section a:hover {
+  color: #FF9D86;
+}
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
