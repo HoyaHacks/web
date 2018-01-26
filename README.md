@@ -1,18 +1,5 @@
-# Wishlist
+# Hoya Hacks Website
 
-+ Add anchor.js
++ Spring 2018
 
-+ http://hackcss.com/
-
-+ Image in the left bar
-
-+ Clean up styles lol
-
-+ Easter eggs
-
-
-# Necessities
-
-+ Figure out sponsorship styles
-
-+ Favicon
++ Please send us your feedback!
